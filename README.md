@@ -1,31 +1,5 @@
 
-# NYGulp:利用Gulp 配置的前端静态项目工作流
-====
-
-## 功能模块（对应gulp的插件）
-
-### JS 文件合并（gulp-concat）
-
-### JS 文件压缩（gulp-uglify）
-
-### 图片无损压缩1（gulp-imagemin + imagemin-pngquant）
-
-经过实际使用发现，图片压缩略有损失，但基本无碍。
-
-### JS 代替F5神器（browser-sync）
-
-### JS 压缩图片时只压缩新增加的图片（gulp-cache）
-
-跟图片压缩插件配合使用
-
-### JS less编译（gulp-less）
-
-### JS less压缩（gulp-minify-css）
-
-### JS PC雪碧图（gulp-spriter）
-
-目前只使用于PC端的雪碧图 因为H5端图片为实际大小的两倍 还在寻找插件中
-
+# 利用Gulp 配置的前端静态项目工作流
 
 ## 使用方法
 
@@ -36,7 +10,6 @@
 
 2. 进入你的项目文件夹下`clone` 本 git 项目
 
-		$ git clone https://github.com/fromIRIS/NYGulp.git
 
    `clone` 后建议删除残留的`.git` 缓存文件夹，方便添加自己的Git 版本信息管理：
    
@@ -63,6 +36,8 @@
 
 		$ gulp buildspritePc
 
+## 注意 
+	1. gulp-less 最新版（4.0.0）有问题，模块化编译无效
 
 
 
